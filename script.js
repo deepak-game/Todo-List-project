@@ -49,7 +49,7 @@ function displayTask(input) {
   </li>`;
   displayTaskEl.insertAdjacentHTML("beforeend", li);
   updateTaskCount();
-
+  markAllTaskCompleted();
   //code to handle selection and deselection
   const taskRadioBtns = document.querySelectorAll("input[type='radio']");
   taskRadioBtns[taskRadioBtns.length - 1].addEventListener("click", (e) => {
