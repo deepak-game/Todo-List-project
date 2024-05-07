@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-6/css/all.min.css"
+      integrity="sha512-G2inZeefmR6vkbXThwxg1S4ypgbjtSU85+Nl1qHp/1FuyAqVL9Haw9iKsru2JKkPCx4CdFgbDd7V5jByMtmiJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <section id="add-task" class="apply-flex">
+        <div><i class="fas fa-tasks"></i></div>
+        <input type="text" class="enter-task-name" />
+        <button class="add-task-btn"><i class="fas fa-plus"></i></button>
+      </section>
+      <section id="update-task" class="apply-flex">
+        <div class="all-task">
+          <i class="fas fa-check-double"></i>
+          Completed all task
+        </div>
+        <button class="clear-completed-task-btn">Clear Completed</button>
+      </section>
+      <hr />
+      <section id="display-task">
+        <ul class="todos-task">
+          <!-- <li class="entered-task">
+            <input type="radio" />Early to rise and early to wise
+            <button class="delete-task-btn">X</button>
+          </li> -->
+        </ul>
+      </section>
+      <hr />
+      <section id="task-details" class="apply-flex">
+        <div class="task-summary">
+          <span class="total-counter">0</span>
+          <span class="task-status">task</span>
+        </div>
+        <div class="display-tasks-btns">
+          <button class="task-btn active">All</button>
+          <button class="task-btn">Uncompleted</button>
+          <button class="task-btn">Completed</button>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

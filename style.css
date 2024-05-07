@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: grey;
+}
+
+.todo-container {
+  width: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Generic style classes */
+.apply-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  height: 3px;
+  background-color: lightslategray;
+}
+
+button {
+  border: none;
+  background: transparent;
+  color: grey;
+}
+
+/* add-task section style */
+#add-task {
+  padding: 5px;
+  height: 50px;
+  background-color: lightslategray;
+  border-radius: 10px;
+}
+
+#add-task input {
+  width: 100%;
+  border: 0;
+  margin: 0 5px;
+  font-size: 18px;
+  background-color: inherit;
+}
+
+#add-task input:focus {
+  outline: 0;
+}
+
+.add-task-btn {
+  color: black;
+  font-weight: bold;
+  display: none;
+}
+
+.entered-task {
+  position: relative;
+}
+
+.entered-task:hover .delete-task-btn {
+  display: inline-block;
+}
+
+.delete-task-btn {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: lightslategray;
+  display: none;
+}
+
+/* update task section style */
+#update-task {
+  margin: 10px;
+  font-size: 15px;
+  color: grey;
+}
+
+#update-task button {
+  color: grey;
+}
+
+/* display-task-style */
+#display-task {
+  font-size: 20px;
+  min-height: 100px;
+}
+
+#display-task ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#display-task input {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+/* task details section styles */
+#task-details {
+  padding: 5px 10px;
+}
+
+.display-tasks-btns > button.active {
+  color: black;
+  font-weight: bold;
+}
+
+.todos-task li {
+  margin: 5px 0;
+}
+
+/* change style when task radio btn selected */
+.todos-task li.success {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* Style to show all task completed */
+.all-task.completed {
+  color: blue;
+}
